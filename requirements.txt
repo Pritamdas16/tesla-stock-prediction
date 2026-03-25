@@ -1,8 +1,8 @@
+```
 streamlit
-tensorflow-cpu
 scikit-learn
 pandas
 numpy
 matplotlib
 joblib
-h5py
+```

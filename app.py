@@ -23,7 +23,7 @@ def load_all():
 
 def simple_rnn_predict(weights, sequence, n_days, scaler):
     predictions = []
-    current_seq = sequence.copy()
+    current_seq = sequence.flatten().copy()
     for _ in range(n_days):
         next_val = float(np.mean(current_seq[-10:]) * 0.98 + 
                         current_seq[-1] * 0.02)
@@ -34,7 +34,7 @@ def simple_rnn_predict(weights, sequence, n_days, scaler):
 
 def lstm_predict(weights, sequence, n_days, scaler):
     predictions = []
-    current_seq = sequence.copy()
+    current_seq = sequence.flatten().copy()
     for _ in range(n_days):
         next_val = float(np.mean(current_seq[-20:]) * 0.95 + 
                         current_seq[-1] * 0.05)

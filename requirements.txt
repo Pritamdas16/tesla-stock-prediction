@@ -1,8 +1,8 @@
-streamlit==1.41.0
-tensorflow==2.18.0
-scikit-learn==1.6.0
-pandas==2.2.0
-numpy==1.26.4
-matplotlib==3.9.0
-joblib==1.4.0
-h5py==3.12.1
+streamlit
+tensorflow-cpu
+scikit-learn
+pandas
+numpy
+matplotlib
+joblib
+h5py
